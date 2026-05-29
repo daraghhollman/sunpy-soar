@@ -24,7 +24,7 @@ import sunpy_soar  # NOQA: F401 isort:skip
 # The third ``near`` argument to ``a.Time`` is not currently supported.
 # You will have to manually filter the results if you want to find the one closest to a given time.
 #
-# For instrument the following are supported:
+# For **instrument** the following are supported:
 #
 # - "EPD": "Energetic Particle Detector"
 # - "EUI": "Extreme UV Imager"
@@ -40,9 +40,13 @@ import sunpy_soar  # NOQA: F401 isort:skip
 # For level the following are supported:
 # L0, L1, L2, L3, LL01, LL02, LL03
 #
-# For product:
+# For **product**:
+#
+# (Please note that while inputs to ``a.soar.Product`` are case
+# insensitive, they must follow the format of those under ``Full
+# Name`` in the below table. i.e. hyphen separators, not underscores.)
 a.soar.Product
 #####################################################
-# For specific instrument detectors or sensors, see ``a.Detector``.
+# For specific instrument detectors or **sensors**, see ``a.Detector``.
 # However, some SOAR products require the use of ``a.soar.Sensor`` attribute instead:
 a.soar.Sensor
